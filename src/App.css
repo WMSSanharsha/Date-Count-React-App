@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.top {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid black 2px;
+}
+
+.button-add {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: solid 3px tomato;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button-reduce {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: solid 3px darkred;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 20px;
+}

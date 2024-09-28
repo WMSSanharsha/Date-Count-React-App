@@ -48,21 +48,31 @@ function Step() {
     if (newCount >= 1) {
       setDate(() => newCount + " days from now ");
     } else {
-      setDate(() => newCount + " days ago was ");
+      setDate(() => Math.abs(newCount) + " days ago was ");
     }
   }
 
   return (
     <>
-      <div>
-        <button onClick={stepReduce}>-</button>Step: {step}
-        <button onClick={stepIncrease}>+</button>
+      <div className="top">
+        <button onClick={stepReduce} className="button-reduce">
+          -
+        </button>
+        Step: {step}
+        <button onClick={stepIncrease} className="button-add">
+          +
+        </button>
       </div>
-      <div>
-        <button onClick={countReduce}>-</button>Count: {count}
-        <button onClick={countIncrease}>+</button>
+      <div className="top">
+        <button onClick={countReduce} className="button-reduce">
+          -
+        </button>
+        Count: {count}
+        <button onClick={countIncrease} className="button-add">
+          +
+        </button>
       </div>
-      <p>
+      <p className="text">
         {date} is {formattedDate}
       </p>
     </>
